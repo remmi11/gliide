@@ -17,8 +17,9 @@ export default function MainComponent() {
           paddingLeft: '10% !important'          
         }}
       >
-        <div className='slide-right' >
-          Build <span style={{color: '#ad6089'}}>AI-Powered</span>
+        <div style={{display: 'flex'}}>
+          <div style={{marginRight: '10px'}}>Build</div>
+          <div className='slide-right' style={{color: '#ad6089'}}>AI-Powered</div>
         </div>
         <div>
           Email Signatures

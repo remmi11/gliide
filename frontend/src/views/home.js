@@ -1,5 +1,6 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import MainComponent from '../components/main'
 import { styled } from '@mui/material/styles';
 
@@ -25,22 +26,41 @@ export default function Home() {
           padding: '10px 25px',
         }}
       >
-        <Box sx={{ display: 'flex' }}>
-          <img
-            src='images/logo.png'
-            style={{
-              height: '50px'
-            }}
-          />
+        <Box sx={{
+          display: 'flex',
+          justifyContent: 'space-between'
+        }}>
+          <div style={{ display: 'flex' }}>
+            <img
+              src='images/logo.png'
+              style={{
+                height: '50px'
+              }}
+            />
+            <div
+              style={{
+                marginLeft: '10px',
+                fontSize: '33px',
+                fontWeight: 'bold',
+                color: '#565656'
+              }}
+            >
+              GLIIDE.AI
+            </div>
+          </div>
           <div
             style={{
-              marginLeft: '10px',
-              fontSize: '33px',
-              fontWeight: 'bold',
-              color: '#565656'
+              padding: '6px',
+              background: 'white'
             }}
           >
-            GLIIDE.AI
+            <Button sx={{
+              color: '#52bbca',
+              marginRight: '10px'
+            }} variant="text">Login</Button>
+            <Button sx={{
+              background: '#52bbca'
+            }} variant="contained">Sign Up</Button>
           </div>
         </Box>
       </AppBar>
