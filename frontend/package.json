@@ -11,9 +11,12 @@
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.15.19",
     "@mui/material": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-router": "^6.23.1",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "latest"
   },
   "browserslist": {

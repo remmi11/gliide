@@ -1,26 +1,18 @@
 import * as React from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import GlobalStyles from '@mui/material/GlobalStyles';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Home from './views/home'
+import SelectAnimation from './views/animation'
+import "./styles/animation.css"
 
-const defaultTheme = createTheme({
-  palette: {
-    primary: {
-      main: "#A8B7F3",
-      contrastText: "#fff" //button text white instead of black
-    },
-    background: {
-      default: "white"
-    }
-  }
-});
 export default function App() {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
-      <CssBaseline />
-      <Home />
-    </ThemeProvider>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/select-animation" element={<SelectAnimation />}></Route>
+        </Routes>
+      </Router>
+    </div>
   );
 }

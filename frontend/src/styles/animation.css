@@ -1,0 +1,373 @@
+.animation-card {
+  border: 2px solid #aaa7a7;
+  border-radius: 24px !important;
+  padding: 15px;
+}
+
+.animation-card h4 {
+  font-weight: bold;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+
+.animation-card .social-box {
+  margin-top: 5px;
+}
+
+.animation-card .social-box a {
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 5px;
+}
+
+.animation-card .info-box {
+  font-size: 18px;
+}
+
+.animation-card .img-box {
+  column-gap: 12px;
+}
+
+.animation-card .info-name {
+  font-weight: bold;
+}
+
+.animation-card.animation-1 .social-box,
+.animation-card.animation-1 .info-name,
+.animation-card.animation-2 .social-box,
+.animation-card.animation-2 .info-name,
+.animation-card.animation-5 .social-box,
+.animation-card.animation-5 .info-name,
+.animation-card.animation-6 .social-box,
+.animation-card.animation-6 .info-name,
+.animation-card.animation-9 .social-box,
+.animation-card.animation-9 .info-name,
+.animation-card.animation-10 .info-name,
+.animation-card.animation-10 .social-box {
+  margin-left: -10px;
+}
+
+.animation-card.animation-4 .img-box,
+.animation-card.animation-2 .img-box,
+.animation-card.animation-6 .img-box,
+.animation-card.animation-8 .img-box {
+  flex-direction: row-reverse;
+}
+
+.animation-card.animation-2 .img-box .primary {
+  z-index: 1;
+  margin-left: -20px;
+}
+
+.animation-card.animation-2 .img-box .secondary {
+  z-index: 2;
+}
+
+.animation-card.animation-1 .img-box .secondary {
+  margin-left: -20px;
+}
+
+.animation-card.animation-3 .img-box .primary,
+.animation-card.animation-3 .img-box .secondary,
+.animation-card.animation-4 .img-box .primary,
+.animation-card.animation-4 .img-box .secondary,
+.animation-card.animation-11 .img-box .primary,
+.animation-card.animation-11 .img-box .secondary,
+.animation-card.animation-12 .img-box .primary,
+.animation-card.animation-12 .img-box .secondary {
+  border-radius: 15px !important;
+}
+
+.animation-card.animation-10 .img-box .primary,
+.animation-card.animation-12 .img-box .primary,
+.animation-card.animation-11 .img-box .secondary,
+.animation-card.animation-9 .img-box .secondary {
+  display: none;
+}
+
+.animation-card.animation-7 .img-box .primary,
+.animation-card.animation-8 .img-box .secondary {
+  margin-bottom: 55px;
+
+}
+
+.animation-card.animation-7 .img-box .secondary,
+.animation-card.animation-8 .img-box .primary {
+  margin-top: 55px;
+  margin-left: -50px;
+}
+
+.animation-card.animation-7 .info-name,
+.animation-card.animation-8 .info-name {
+  margin-left: -60px;
+}
+
+.animation-card.animation-7 .info-position,
+.animation-card.animation-8 .info-position {
+  margin-left: -40px;
+}
+
+.animation-card.animation-7 .info-phone,
+.animation-card.animation-8 .info-phone {
+  margin-left: -15px;
+}
+
+.animation-card.animation-1 .img-box .primary,
+.animation-card.animation-2 .img-box .secondary,
+.animation-card.animation-3 .img-box .primary,
+.animation-card.animation-4 .img-box .secondary,
+.animation-card.animation-7 .img-box .primary,
+.animation-card.animation-8 .img-box .secondary,
+.animation-card.animation-9 .img-box .primary,
+.animation-card.animation-10 .img-box .secondary {
+  -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+}
+
+.animation-card.animation-1 .img-box .secondary,
+.animation-card.animation-2 .img-box .primary,
+.animation-card.animation-3 .img-box .secondary,
+.animation-card.animation-4 .img-box .primary {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+}
+
+.animation-card.animation-1 .social-box a,
+.animation-card.animation-2 .social-box a,
+.animation-card.animation-3 .social-box a,
+.animation-card.animation-4 .social-box a,
+.animation-card.animation-9 .social-box a,
+.animation-card.animation-10 .social-box a {
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+}
+
+.animation-card.animation-5 .img-box .primary,
+.animation-card.animation-5 .img-box .secondary,
+.animation-card.animation-6 .img-box .secondary,
+.animation-card.animation-6 .img-box .primary,
+.animation-card.animation-11 .img-box .primary,
+.animation-card.animation-12 .img-box .secondary {
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+}
+
+.animation-card.animation-5 .social-box a,
+.animation-card.animation-6 .social-box a,
+.animation-card.animation-7 .social-box a,
+.animation-card.animation-8 .social-box a,
+.animation-card.animation-11 .social-box a,
+.animation-card.animation-12 .social-box a {
+  -webkit-animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+}
+
+.animation-card.animation-7 .img-box .secondary,
+.animation-card.animation-8 .img-box .primary {
+  -webkit-animation: slide-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-tl 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
+}
+
+.animation-card.social-box a.social-1 {
+  animation-delay: 0;
+}
+
+.animation-card .social-box a.social-2 {
+  animation-delay: 50ms;
+}
+
+.animation-card .social-box a.social-3 {
+  animation-delay: 100ms;
+}
+
+.animation-card .social-box a.social-4 {
+  animation-delay: 150ms;
+}
+
+.animation-card .social-box a.social-5 {
+  animation-delay: 200ms;
+}
+
+.animation-card .social-box a.social-6 {
+  animation-delay: 250ms;
+}
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-2-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0) scale(0.7);
+    transform: translateZ(0) scale(0.7);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translateZ(50px) scale(1);
+    transform: translateZ(50px) scale(1);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0) scale(0.7);
+    transform: translateZ(0) scale(0.7);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translateZ(50px) scale(1);
+    transform: translateZ(50px) scale(1);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation fade-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation fade-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-tl
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(30px) translateX(30px);
+    transform: translateY(30px) translateX(30px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes slide-tl {
+  0% {
+    -webkit-transform: translateY(30px) translateX(30px);
+    transform: translateY(30px) translateX(30px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+}

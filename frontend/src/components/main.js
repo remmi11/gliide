@@ -3,23 +3,35 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
-
-
 export default function MainComponent() {
+  const onBuildSignature = () => {
+    const options = {
+      method: 'GET',
+      header: {
+
+      }
+    };
+
+    fetch(`https://api.scrapin.io/enrichment/profile?linkedinUrl=https://www.linkedin.com/in/naor-magnagi-87b007b5/?originalSubdomain=il`, options)
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
+  }
+
   return (
-    <Grid container spacing={2} style={{zIndex: 1}}>
+    <Grid container spacing={2} style={{ zIndex: 1 }}>
       <Grid
         item xs={6} md={6}
         sx={{
           margin: 'auto',
           fontSize: '31px',
           fontWeight: 'bold',
-          paddingLeft: '10% !important'          
+          paddingLeft: '10% !important'
         }}
       >
-        <div style={{display: 'flex'}}>
-          <div style={{marginRight: '10px'}}>Build</div>
-          <div className='slide-right' style={{color: '#ad6089'}}>AI-Powered</div>
+        <div style={{ display: 'flex' }}>
+          <div style={{ marginRight: '10px' }}>Build</div>
+          <div className='slide-right' style={{ color: '#ad6089' }}>AI-Powered</div>
         </div>
         <div>
           Email Signatures
@@ -52,10 +64,10 @@ export default function MainComponent() {
               marginRight: '10px'
             }}
           />
-          <Button variant="contained">Build</Button>
+          <Button variant="contained" onClick={onBuildSignature}>Build</Button>
         </div>
         <div
-          style={{marginBottom: '50px', display: 'flex'}}
+          style={{ marginBottom: '50px', display: 'flex' }}
         >
           <span style={{
             fontSize: '20px',
@@ -95,7 +107,7 @@ export default function MainComponent() {
         </div>
       </Grid>
       <Grid item xs={6} md={6}>
-        <img style={{width: '90%'}} src="images/profile-card.png" />
+        <img style={{ width: '90%' }} src="images/profile-card.png" />
       </Grid>
     </Grid>
   )
