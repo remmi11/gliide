@@ -15,7 +15,7 @@ export default function AnimationCard({ type = 0 }) {
         <Typography variant='h4' gutterBottom>{type}.</Typography>
         <FlexBox sx={{ alignItems: 'center', justifyContent: 'center' }}>
           <FlexBox className='img-box'>
-            <UserAvatar src="https://mui.com/static/images/avatar/1.jpg" className='primary circle' />
+            <UserAvatar src="images/avatar.png" className='primary circle' />
             <UserAvatar className='secondary'>ev.</UserAvatar>
           </FlexBox>
           <FlexBox className="info-box" sx={{ flexDirection: 'column' }} pl={3}>

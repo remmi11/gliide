@@ -2,6 +2,7 @@
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { useEffect } from 'react';
 
 export default function MainComponent() {
   const onBuildSignature = () => {
