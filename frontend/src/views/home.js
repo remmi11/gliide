@@ -20,9 +20,10 @@ export default function Home() {
           url: linkedinUrl,
         });
 
-        const linkedinId = JSON.parse(res.data).persion.linkedInIdentifier;
+        const linkedinId = JSON.parse(res.data).person.linkedInIdentifier;
         navigate(`/select-animation/${linkedinId}`);
       } catch (e) {
+        console.log(e)
         setLoading(false);
         NotificationManager.error(e.error);
       }

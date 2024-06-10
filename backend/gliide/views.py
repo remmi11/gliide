@@ -21,16 +21,19 @@ class LinkedinListApiView(APIView):
 
         if scrapin_res.status_code == 200:
             profile = scrapin_res.json()
-            
-            if Linkedin.objects.get(linid=profile.get('persion').get('linkedInIdentifier')).exits():
-                return Response({'error': 'Profile already exists'}, status=status.HTTP_400_BAD_REQUEST)
-            
-            data = {
-                'url': request.data.get('url'), 
-                'data': json.dumps(profile), 
-                'linid': profile.get('persion').get('linkedInIdentifier')
-            }
-            serializer = LinkedinSerializer(data=data)
+
+            if Linkedin.objects.filter(linid=profile['person']['linkedInIdentifier']).exists():
+                data = Linkedin.objects.filter(linid=profile['person']['linkedInIdentifier']).first()
+                serializer = LinkedinSerializer(data)
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            else:
+                data = {
+                    'url': request.data.get('url'), 
+                    'data': json.dumps(profile), 
+                    'linid': profile['person']['linkedInIdentifier']
+                }
+                serializer = LinkedinSerializer(data=data)
+
             if serializer.is_valid():
                 serializer.save()
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
