@@ -21,7 +21,7 @@ export default function Animation() {
   }, []);
 
   return (
-    <div>
+    <Box position={'relative'} zIndex={2}>
       <Typography variant="h4" align="center" fontWeight={600}>
         Select Animation:
       </Typography>
@@ -34,6 +34,6 @@ export default function Animation() {
           ))}
         </Grid>
       </Box>
-    </div>
+    </Box>
   );
 }
