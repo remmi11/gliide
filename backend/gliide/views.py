@@ -23,8 +23,11 @@ class LinkedinListApiView(APIView):
             profile = scrapin_res.json()
 
             if Linkedin.objects.filter(linid=profile['person']['linkedInIdentifier']).exists():
-                data = Linkedin.objects.filter(linid=profile['person']['linkedInIdentifier']).first()
-                serializer = LinkedinSerializer(data)
+                user_data = Linkedin.objects.filter(linid=profile['person']['linkedInIdentifier']).first()
+                user_data.data = json.dumps(profile)
+                user_data.save()
+
+                serializer = LinkedinSerializer(user_data)
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
             else:
                 data = {

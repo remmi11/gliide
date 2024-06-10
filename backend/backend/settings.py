@@ -138,4 +138,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SCRAPIN_API_KEY = os.environ.get('SCRAPIN_API_KEY')
+SCRAPIN_API_KEY = 'sk_live_663946313a4e8207e2e0e1c6_key_ih21wqntu7d'
