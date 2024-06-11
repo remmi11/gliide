@@ -40,8 +40,8 @@ export default function AnimationCard({ type = 0, data }) {
               >
                 <div className="info-name">{`${data?.person?.firstName} ${data?.person?.lastName}`}</div>
                 <div className="info-position">{data?.person?.headline}</div>
-                {type > 6 && data?.person?.phoneNumbers && data?.person?.phoneNumbers.length > 0 &&
-                  <div className="info-phone">{data?.person?.phoneNumbers[0]}</div>}
+                {type > 6 && data?.company?.phone &&
+                  <div className="info-phone">{data?.company?.phone}</div>}
                 <FlexBox sx={{ columnGap: 1 }} className="social-box">
                   <Link
                     href={data?.person?.linkedInUrl}
