@@ -36,6 +36,15 @@
   font-weight: bold;
 }
 
+.animation-card .info-position {
+  line-height: 1.2;
+}
+
+.animation-card .info-phone {
+  font-style: italic;
+  margin-top: 5px;
+}
+
 .animation-card.animation-1 .social-box,
 .animation-card.animation-1 .info-name,
 .animation-card.animation-2 .social-box,
@@ -48,7 +57,7 @@
 .animation-card.animation-9 .info-name,
 .animation-card.animation-10 .info-name,
 .animation-card.animation-10 .social-box {
-  margin-left: -10px;
+  margin-left: -16px;
 }
 
 .animation-card.animation-4 .img-box,
